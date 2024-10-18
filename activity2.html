@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Variables</h2>
+    <button onclick="myfunction()">Click me</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <script>
+        //global variable
+        var a=10;
+        function myfunction(){
+            //local variable
+            var b=20;
+            document.getElementById("p1").innerHTML="Value of a is" +a;
+            document.getElementById("p2").innerHTML="Value of b inside function is" +b;
+        }
+        document.getElementById("p3").innerHTML="Value of a is" +a;
+        document.getElementById("p4").innerHTML="Value of b is" +b;
+    </script>
+</body>
+</html>
